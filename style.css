@@ -1,0 +1,138 @@
+/* Reset default padding, margin, and box-sizing */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Style for horizontal rule with box-shadow */
+hr {
+    box-shadow: 10px 5px 10px rgba(46, 35, 199, 0.979);
+}
+
+/* Style for horizontal rule inside the title section */
+.titleSection hr {
+    margin-top: 5%;
+    width: 90%;
+    margin-left: 5%;
+}
+
+/* Style for h1 inside the title section */
+.titleSection h1 {
+    font-size: 30px;
+    font-family: monospace, sans-serif;
+    font-weight: 200;
+    padding-top: 5%;
+    padding-left: 10%;
+}
+
+/* Style for main container using flexbox */
+.mainContainer {
+    width: 90%;
+    margin-left: 5%;
+    height: 900px;
+    border: solid black 1px;
+    margin-top: 20px;
+    display: flex;
+}
+
+/* Style for inner containers */
+.mainContainer .innerContainer {
+    border: solid 1px black;
+    height: 90%;
+    width: 50%;
+}
+
+/* Style for input container inside left container */
+.mainContainer #leftContainer .inputContainer {
+    height: 200px;
+    border: solid black 1px;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+    text-align: center;
+    font-family: monospace;
+    font-weight: 200;
+}
+
+/* Style for h3 inside input container */
+.mainContainer #leftContainer .inputContainer h3 {
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+/* Style for buttons inside input container */
+.mainContainer #leftContainer .inputContainer button {
+    width: 60px;
+    box-shadow: 10px 5px 10px rgba(46, 35, 199, 0.979);
+}
+
+/* Style for reminder container inside right container */
+.mainContainer #rightContainer #reminderContainer {
+    height: 200px;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+    text-align: center;
+    font-family: monospace;
+    font-weight: 200;
+}
+
+/* Style for graph container inside right container */
+.mainContainer #rightContainer #graphContainer {
+    height: 400px;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+}
+
+/* Style for myChart canvas inside graph container */
+.mainContainer #rightContainer #graphContainer #myChart {
+    height: 400px;
+    width: 100%;
+}
+
+/* Style for todo container inside left container */
+.mainContainer #leftContainer .todoContainer {
+    height: 500px;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+    background-color: rgb(83, 92, 110);
+}
+
+/* Style for todo container */
+.mainContainer .todoContainer {
+    text-align: center;
+    font-family: monospace;
+    font-size: 30px;
+}
+
+/* Style for h3 inside todo container */
+.mainContainer .todoContainer h3 {
+    font-weight: 100;
+    font-family: monospace;
+    font-size: 25px;
+    padding: 20px;
+}
+
+/* Style for randomQ */
+#randomQ {
+    padding: 25px;
+    font-size: 20px;
+}
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .mainContainer {
+        flex-direction: column;
+    }
+
+    .mainContainer .innerContainer {
+        width: 100%;
+    }
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Progress Tracker</title>
+  </head>
+  <body>
+    <!-- Title Section -->
+    <section class="titleSection">
+      <h1>Progress Tracker</h1>
+      <hr />
+    </section>
+
+    <!-- Main Container -->
+    <section class="mainContainer">
+      <!-- Left Container -->
+      <section class="innerContainer" id="leftContainer">
+        <div class="inputContainer">
+          <!-- Time Tracking Buttons -->
+          <h3>Click the box to log your time</h3>
+          <button class="timeButton" id="html">HTML</button>
+          <button class="timeButton" id="css">CSS</button>
+          <button class="timeButton" id="js">JS</button>
+          <button class="timeButton" id="all">ALL</button>
+
+          <!-- To-Do List Form -->
+          <h3>Add To List</h3>
+          <form>
+            <input
+              id="todoInput"
+              type="text"
+              placeholder="Add to the To-Do List here"
+            />
+            <button id="todoButton" type="button">ADD</button>
+          </form>
+        </div>
+
+        <!-- To-Do List Container -->
+        <div class="todoContainer">
+          <h3>To-Do List</h3>
+          <ul id="todoList">
+            <!-- Changed id name to "todoList" for consistency -->
+          </ul>
+        </div>
+      </section>
+
+      <!-- Right Container -->
+      <section class="innerContainer" id="rightContainer">
+        <!-- Reminder Container -->
+        <section id="reminderContainer">
+          <div id="randomQ"></div>
+        </section>
+
+        <!-- Graph Container -->
+        <section id="graphContainer">
+          <canvas id="myChart"></canvas>
+        </section>
+      </section>
+    </section>
+
+    <!-- Chart.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Main JavaScript file -->
+    <script src="main.js"></script>
+  </body>
+</html>
